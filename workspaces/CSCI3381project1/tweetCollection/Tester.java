@@ -19,6 +19,11 @@ public class Tester {
 		//Initialized collection with trainingProcessed file
 		TweetCollection collection = new TweetCollection("I:/eclipse/workspaces/CSCI3381project1/tweetCollection/trainingProcessed.txt");
 		
+		//to string collection
+		collection.toStringAll();
+		System.out.println("\n\nYes, all 1.6 million tweets just printed to the screen!");
+		System.out.println("You might want to comment out line 25 in Tester, but it realy only takes slightly longer\n than writing to a file");
+		
 		//prints out first and last 100 tweets in collection
 		System.out.print(collection.toString());
 		
@@ -87,11 +92,6 @@ public class Tester {
 		
 		//write file with fast ids
 		collection.writeWithFastIds("I:/eclipse/workspaces/CSCI3381project1/tweetCollection/trainingProcessedWriteFastID.txt");
-
-		//to string collection
-		collection.toStringAll();
-		System.out.println("\n\nYes, all 1.6 million tweets just printed to the screen!");
-		System.out.println("You might want to comment out line 92 in Tester to actuially look at the rest of the code");
 		
 	}
 
